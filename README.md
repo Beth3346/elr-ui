@@ -1,6 +1,8 @@
-# elr-ui 
+# elr-ui
 
 JavaScript UI Utilities
+
+[![Build Status](https://travis-ci.org/Beth3346/elr-ui.svg?branch=master)](https://travis-ci.org/Beth3346/elr-ui)
 
 ## Installation
 
