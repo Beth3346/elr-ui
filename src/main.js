@@ -197,7 +197,7 @@ const elrUI = function() {
                 }
             };
 
-            $(window).on('scroll', this.throttle(showElement, 100));
+            $(window).on('scroll', elr.throttle(showElement, 100));
         },
         clearElement($el, speed = 300) {
             $el.fadeOut(speed, function() {
