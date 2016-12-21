@@ -36,14 +36,14 @@ const elrUI = function() {
                     boxIds.push($(this).attr('id'));
                 });
 
-                boxIds = self.unique(boxIds);
+                boxIds = elr.unique(boxIds);
 
-                self.each(boxIds, function() {
+                elr.each(boxIds, function() {
                     let checkboxValues = [];
                     let $boxes = $form.find(`input:checked#${this}`);
 
                     $boxes.each(function() {
-                        checkboxValues.push(self.trim($(this).val()));
+                        checkboxValues.push(elr.trim($(this).val()));
                     });
 
                     formInput[this] = checkboxValues;
@@ -51,16 +51,16 @@ const elrUI = function() {
                 });
             }
 
-            self.each($fields, function() {
+            elr.each($fields, function() {
                 let $that = $(this);
                 let id = $that.attr('id');
                 let formInput = [];
                 let input;
 
-                if (self.trim($that.val()) === '') {
+                if (elr.trim($that.val()) === '') {
                     input = null;
                 } else {
-                    input = self.trim($that.val());
+                    input = elr.trim($that.val());
                 }
 
                 if (input) {
@@ -103,7 +103,7 @@ const elrUI = function() {
             const $links = $nav.find('a[href^="#"]');
             const positions = this.findPositions($content, el);
 
-            this.each(positions, function(index, value) {
+            elr.each(positions, function(index, value) {
                 if (scroll === 0) {
                     $nav.find(`a.${activeClass}`).removeClass(activeClass);
                     $links.eq(0).addClass(activeClass);
@@ -168,7 +168,7 @@ const elrUI = function() {
         // assigns a random class to an element.
         // useful for random backgrounds/styles
         randomClass($el, classList = []) {
-            this.each(classList, function(index, value) {
+            elr.each(classList, function(index, value) {
                 $el.removeClass(value);
             });
 
