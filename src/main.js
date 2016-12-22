@@ -225,7 +225,7 @@ const elrUI = function() {
                 class: 'elr-blackout'
             });
 
-            $overlay.hide().appendTo('body').fadeIn(speed, function() {
+            $overlay.hide().appendTo('body').fadeIn(300, function() {
                 $close.appendTo($overlay);
 
                 if (cb) {
