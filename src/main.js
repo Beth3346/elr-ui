@@ -213,6 +213,29 @@ const elrUI = function() {
                     $that.val('');
                 }
             });
+        },
+        addOverlay(cb) {
+            // add blackout overlay
+            const $close = this.createElement('button', {
+                class: 'close',
+                text: 'x'
+            });
+
+            const $overlay = this.createElement('div', {
+                class: 'elr-blackout'
+            });
+
+            $overlay.hide().appendTo('body').fadeIn(speed, function() {
+                $close.appendTo($overlay);
+
+                if (cb) {
+                    cb();
+                }
+            });
+        },
+        refreshContainer($container, $items) {
+            $container.empty();
+            $items.appendTo($container);
         }
     };
 
