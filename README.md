@@ -2,7 +2,7 @@
 
 JavaScript UI Utilities
 
-[![Build Status](https://travis-ci.org/Beth3346/elr-ui.svg?branch=master)](https://travis-ci.org/Beth3346/elr-ui)
+[![Build Status](https://travis-ci.org/Beth3346/elr-ui.svg?branch=master)](https://travis-ci.org/Beth3346/elr-ui) [![Greenkeeper badge](https://badges.greenkeeper.io/Beth3346/elr-ui.svg)](https://greenkeeper.io/)
 
 ## Installation
 
